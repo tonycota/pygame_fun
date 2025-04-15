@@ -65,7 +65,7 @@ def check_collision(player_x, player_y, enemy):
 # Function to show instructions
 def show_instructions():
     instructions_text = font.render("the party ran out of modelos!", True, BLACK)
-    instructions_subtext = subfont.render("the foos are pissed! "
+    instructions_subtext = subfont.render("the foos are pissed! \n "
     "use arrow keys to run!", True, BLACK)
     
     win.fill(WHITE)
@@ -100,7 +100,7 @@ while running:
 
     if game_over:
         # Draw "You Lose" text when the game is over
-        text = font.render("you died foo", True, BLACK)
+        text = font.render("you died ese!", True, BLACK)
         time_text = time_font.render(f"Time Survived: {elapsed_time} seconds", True, BLACK)
         retry_text = subfont.render("Press 'f' to close the window", True, BLACK)
         
